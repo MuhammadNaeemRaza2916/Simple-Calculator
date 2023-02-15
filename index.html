@@ -65,7 +65,7 @@
         console.log("navigator.serviceWorker:", navigator.serviceWorker)
 
         if (typeof navigator.serviceWorker !== 'undefined') {
-            navigator.serviceWorker.register('sw.js').then((registration) => {
+            navigator.serviceWorker.register('/sw.js').then((registration) => {
                 console.log('Service worker registration succeeded:', registration);
             }, (error) => {
                 console.error(`Service worker registration failed: ${error}`);
